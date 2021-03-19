@@ -21,13 +21,13 @@
                     <input type="color">
 
                     <input type="range" name="" id="">
-                    <input type="number" name="" id="" placeholder="Enter a Number">
+                    <input type="number" name="" id="" min="1" max="1000" placeholder="Enter a Number">
                 </form>
             </div>
             <div>
                 <h1>New Form</h1>
 
-                <form action="/tacos">
+                <form action="submit">
                     <p>
                         <label for="username">Enter Username</label>
                         <input type="text" name="" id="username" placeholder="user name"> q
@@ -45,6 +45,15 @@
                             <option value="ribs">Ribs</option>
                         </select>
                     </p>
+                    <p>
+                        <label for="cheese">Amount of Cheese</label>
+                        <input type="range" name="cheese_level" id="cheese" min=0 max=100 step="10" value="70">
+                    </p>
+                    <p>
+                        <label for="request">Any Special Request?</label>
+                    </p>
+                    <p><textarea name="request" id="request" cols="30" rows="10" placeholder="Type Here!"></textarea></p>
+                    <button type="button">Submit</button>
                 </form>
             </div>
         </body>
