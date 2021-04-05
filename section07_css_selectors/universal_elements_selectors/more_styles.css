@@ -16,8 +16,10 @@ h1,h2 {
     color: #e29578;
 }
 
-span {
+.post a {
     color: #5e60ce;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .tag {
@@ -25,3 +27,41 @@ span {
     font-size: 16px;
     padding: 2px;
 }
+
+/* Example of: ADJANCENT & DIRECT DESCENDENT SELECTORS */
+h2 + button {
+    font-size: 20px;
+}
+
+/* Example of ATTRIBUTE */
+input[type="password"] {
+    color: orangered;
+}
+
+/* section[class="post"] {
+    background-color: purple;
+} */
+/* !!! better way to write lines 39-41 !!! */
+/* section.post {
+    background-color: blue;
+} */
+
+/* Example of: PSUEDO CLASSES */
+.post button:hover {
+    background-color: #b5838d;
+    color: #f8edeb;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: #14213d;
+}
+
+
+/* Example of: NTH OF TYPE (selecting 'every-other' */
+/* .post:nth-of-type(2n) {
+    color: *input-color*
+} */
