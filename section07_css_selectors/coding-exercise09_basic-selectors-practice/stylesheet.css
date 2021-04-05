@@ -1,12 +1,12 @@
- li {
+li {
      color: blue;
  }
 
- .done {
+.done {
      color: grey;
  }
 
- #clear {
+#clear {
      background-color: red;
      color: white;
  }
